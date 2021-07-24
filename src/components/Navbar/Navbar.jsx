@@ -10,10 +10,10 @@ const Navbar = () => {
         <nav>
             <LogoWidget />           
 
-            <button className="NavBtn">Videojuegos</button>
-            <button className="NavBtn">Mangas y Cómics</button>
-            <button className="NavBtn">Figuras Coleccionables</button>
-            <button className="NavBtn">Juegos de mesa</button> 
+            <Link to="/categorias/videojuegos" className="NavBtn">Videojuegos</Link>
+            <Link className="NavBtn">Mangas y Cómics</Link>
+            <Link className="NavBtn">Figuras Coleccionables</Link>
+            <Link className="NavBtn">Juegos de mesa</Link> 
                         
             {/* <CardWidget />  */}         
         </nav>                

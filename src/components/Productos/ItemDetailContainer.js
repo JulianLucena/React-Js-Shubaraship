@@ -1,10 +1,22 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import { ItemPops } from "./Productos-Figuras";
 
 const ItemDetailContainer = () => {
 
+    const [item, setItem] = useState({})
+
+    const { id } = useParams()
+
+    useEffect(() => {
+        const producto = ItemPops.find(prod => prod.id === parseInt(id))
+        setItem(producto)
+    })
+
+
     return <div>
-        <h2>Item Detail Container</h2>
-        <ItemDetail />
+        <ItemDetail {...item}/>
     </div>
 };
 

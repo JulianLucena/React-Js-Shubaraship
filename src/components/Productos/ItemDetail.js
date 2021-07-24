@@ -1,12 +1,13 @@
 import React from "react";
 
-const ItemDetail = () => {
+const ItemDetail = ({category, id, img, price, stock, title}) => {
     return(
         <div className="detailbox">
-            <img src="./img/Queen.png" alt= "Makoto" />
             <div>
-                <h1>Queen</h1>
-                <h2>Precio:2500</h2>                
+                <img src={img} alt={title}/>
+                <h1>{title}</h1>
+                <h2>Precio: ${price}</h2> 
+                <p>Cantidad disponible: {stock}</p>
             </div>
         </div>
     );
