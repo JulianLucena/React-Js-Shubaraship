@@ -1,14 +1,33 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
+import { CartContext } from "../CartContext/CartContext";
 
 const ItemDetail = ({category, id, img, price, stock, title}) => {
 
-    const [count, setCount] = useState(1);
+    const [cantidad, setCount] = useState(1);
 
     const [finished, setFinished] = useState(false);
 
     const handleState = () => setFinished(!finished);
+
+    const {agregarAlCarrito, carrito, eliminarProducto} = useContext(CartContext)
+    console.log(carrito)
+
+    const handleAgregar = () => {
+        agregarAlCarrito({
+            category,
+            id,
+            img,
+            price,
+            stock,
+            title,
+            cantidad
+        })
+    }
+    const handleEliminar = () => {
+        eliminarProducto(id)
+    }
 
     return(
         <div className="detailbox">
@@ -19,9 +38,10 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
                 <p>Cantidad disponible: {stock}</p>
                 {!finished ? (     
                     <>               
-                    <ItemCount stock={stock} count={count} setCount={setCount} />
-                    <button onClick={handleState}>Comprar</button> 
-                    </>                   
+                    <ItemCount stock={stock} cantidad={cantidad} setCount={setCount} />
+                    <button onClick={handleState, handleAgregar}>Agregar al carrito</button> 
+                    <button onClick={handleEliminar}>Eliminar producto</button>
+                    </>
                 ) : (
                     <>
                     <Link to="/cart" onClick={handleState}>

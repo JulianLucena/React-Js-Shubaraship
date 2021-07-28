@@ -1,23 +1,23 @@
 let min = 0;
 
-const ItemCount = ({stock, count, setCount}) => {
+const ItemCount = ({stock, cantidad, setCount}) => {
 
     const sumar = () => {
-        if (count < stock) {
-            setCount(count + 1)         
+        if (cantidad < stock) {
+            setCount(cantidad + 1)         
         }
     }
 
     const restar = () => {
-        if (count > min) {
-            setCount(count - 1)
+        if (cantidad > min) {
+            setCount(cantidad - 1)
         }
     }
 
     return(
         <div className="Counter">            
             <button className="CountBtn" onClick ={restar}>-</button>
-            <h1>{count}</h1>
+            <h1>{cantidad}</h1>
             <button className="CountBtn" onClick ={sumar}>+</button>
         </div>        
     );    

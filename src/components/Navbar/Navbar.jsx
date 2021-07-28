@@ -9,13 +9,12 @@ const Navbar = () => {
     return (
         <nav>
             <LogoWidget />           
+            <CardWidget /> 
 
             <Link to="/categorias/videojuegos" className="NavBtn">Videojuegos</Link>
             <Link className="NavBtn">Mangas y Cómics</Link>
             <Link className="NavBtn">Figuras Coleccionables</Link>
-            <Link className="NavBtn">Juegos de mesa</Link> 
-                        
-            {/* <CardWidget />  */}         
+            <Link className="NavBtn">Juegos de mesa</Link>                       
         </nav>                
     );
 };
