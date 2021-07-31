@@ -7,14 +7,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
     return (
-        <nav>
-            <LogoWidget />           
-            <CardWidget /> 
-
+        <nav className="nav">
+            <LogoWidget />                    
             <Link to="/categorias/videojuegos" className="NavBtn">Videojuegos</Link>
             <Link className="NavBtn">Mangas y Cómics</Link>
             <Link className="NavBtn">Figuras Coleccionables</Link>
-            <Link className="NavBtn">Juegos de mesa</Link>                       
+            <Link className="NavBtn">Juegos de mesa</Link>
+            <CardWidget />                        
         </nav>                
     );
 };

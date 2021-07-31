@@ -1,4 +1,4 @@
-nav{
+.nav{
   display: flex;
   justify-content: space-evenly;
   background-color:  orange;
@@ -6,7 +6,12 @@ nav{
   padding-bottom: 10px;
 }
 .Logo{
-  max-width: 25%;  
+  max-width: 40%;  
+  float: left;
+}
+.Cart{
+  max-width: 35%;  
+  float: left;
 }
 .NavBtn{
   max-height: 60px;

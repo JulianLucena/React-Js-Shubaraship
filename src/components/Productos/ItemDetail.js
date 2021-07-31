@@ -9,12 +9,13 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
 
     const [finished, setFinished] = useState(false);
 
-    const handleState = () => setFinished(!finished);
+    const handleState = () => {
+        setFinished(!finished);
+        
+    }
 
-    const {agregarAlCarrito, carrito, eliminarProducto} = useContext(CartContext)
-    console.log(carrito)
-
-    const handleAgregar = () => {
+    const handleStateAndCart = () => {
+        setFinished(!finished)
         agregarAlCarrito({
             category,
             id,
@@ -25,6 +26,10 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
             cantidad
         })
     }
+
+    const {agregarAlCarrito, carrito, eliminarProducto} = useContext(CartContext)
+    console.log(carrito)
+
     const handleEliminar = () => {
         eliminarProducto(id)
     }
@@ -39,7 +44,7 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
                 {!finished ? (     
                     <>               
                     <ItemCount stock={stock} cantidad={cantidad} setCount={setCount} />
-                    <button onClick={handleState, handleAgregar}>Agregar al carrito</button> 
+                    <button onClick={handleStateAndCart}>Agregar al carrito</button> 
                     <button onClick={handleEliminar}>Eliminar producto</button>
                     </>
                 ) : (

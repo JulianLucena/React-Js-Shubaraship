@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import ItemListContainer from './components/Productos/ItemListContainer';
 import ItemDetailContainer from "./components/Productos/ItemDetailContainer";
 import { CartContext, CartProvider } from './components/CartContext/CartContext';
+import Cart from './components/Navbar/Cart';
 
 function App() {
 
@@ -19,7 +19,10 @@ function App() {
               </Route>      
               <Route path="/detail/:id">
                 <ItemDetailContainer />
-              </Route>            
+              </Route>     
+              <Route path="/cart">
+                <Cart />
+              </Route>
             </Switch>
         </div>
       </BrowserRouter>
