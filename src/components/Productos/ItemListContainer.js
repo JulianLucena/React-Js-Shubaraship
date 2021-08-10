@@ -5,16 +5,18 @@ import { database } from "../../firebase/firebase";
 
 const ItemListContainer = () => {
 
-    const [figurasAMostrar, setFigurasAMostrar] = useState([]);
+    const [productoAMostrar, setProductoAMostrar] = useState([]);
 
-    const obtenerFiguras = () => {
+    const { catId } = useParams()
 
-        const figuras = database.collection("Figuras");
+    const obtenerProductos = () => {     
+   
+        const categoria = database.collection(catId);
 
-        figuras
+        categoria
         .get()
         .then((query) => 
-            setFigurasAMostrar(query.docs.map(doc => {
+                setProductoAMostrar(query.docs.map(doc => {
                 return {...doc.data(), id: doc.id };
             }))
         );
@@ -22,10 +24,10 @@ const ItemListContainer = () => {
 
     return <div>
 
-        <button onClick={obtenerFiguras}>Llamar Firebase</button>
+        <button onClick={obtenerProductos}>Llamar Firebase</button>
 
-        {figurasAMostrar.length ? (
-            figurasAMostrar.map(figura => <ItemList figura ={figura} />)
+        {productoAMostrar.length ? (
+            productoAMostrar.map(figura => <ItemList figura ={figura} />)
         ) : (
             <h3>Cargando...</h3>
         )}

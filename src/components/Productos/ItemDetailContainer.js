@@ -10,10 +10,9 @@ const ItemDetailContainer = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        const producto = ItemPops.find(prod => prod.id === parseInt(id))
+        const producto = ItemPops.find(prod => prod.id)
         setItem(producto)
     })
-
 
     return <div>
         <ItemDetail {...item}/>

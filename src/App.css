@@ -46,3 +46,11 @@
 .ItemStyleContainer{
   border: solid red 5px;
 }
+
+.StyleImg{
+  width: 100px;
+}
+
+.producto{
+  border: solid 5px red;
+}
