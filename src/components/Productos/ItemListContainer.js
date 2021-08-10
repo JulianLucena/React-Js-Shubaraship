@@ -25,13 +25,14 @@ const ItemListContainer = () => {
     return <div>
 
         <button onClick={obtenerProductos}>Llamar Firebase</button>
-
-        {productoAMostrar.length ? (
-            productoAMostrar.map(figura => <ItemList figura ={figura} />)
-        ) : (
-            <h3>Cargando...</h3>
-        )}
         
+        <div className="producto">
+            {productoAMostrar.length ? (
+                productoAMostrar.map(producto => <ItemList producto ={producto} />)
+            ) : (
+                <h3>Cargando...</h3>
+            )}
+        </div>         
     </div>
 };
 

@@ -7,8 +7,7 @@ const Cart = () => {
     const {carrito} = useContext(CartContext)
 
     return (
-        <div>
-            <h1>HOLA SOY EL CARRITO</h1>  
+        <div> 
             {carrito.length ? (
             carrito.map(producto => <Item key={producto.id} item={producto}/>)
             ) : (

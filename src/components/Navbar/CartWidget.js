@@ -10,10 +10,10 @@ export const CardWidget = () => {
     return(
         <Link to="/cart">
             <div>
-                <img className = "Cart" src = {imagenCarrito} alt = "Imagen del Carrito"></img>
-                <h4>Carrito</h4>
+                <img className = "CarritoLogo" src = {imagenCarrito} alt = "Imagen del Carrito"></img>
+                {/* <h4>Carrito</h4>
                 <p>Cantidad: {cantidadCarrito()}</p>
-                <p>Total: {totalCarrito()}</p>
+                <p>Total: {totalCarrito()}</p> */}
             </div>
         </Link>
     );
