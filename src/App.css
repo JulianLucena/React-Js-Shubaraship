@@ -20,6 +20,10 @@
   width: 50vh;
 }
 
+.ItemStyleContainer{
+  border: solid 5px red;
+}
+
 .ItemStyleImg{
   max-width: 200px;
 }

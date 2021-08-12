@@ -4,7 +4,7 @@ import CartItem from "../Productos/CartItem"
 
 const Cart = () => {
 
-    const {carrito} = useContext(CartContext)
+    const {carrito, totalCarrito, cantidadCarrito} = useContext(CartContext)
 
     return (
         <div> 
@@ -13,6 +13,10 @@ const Cart = () => {
             ) : (
             <h1>Tu carrito está vacío</h1>
             )} 
+
+            <h1>Cantidad: {cantidadCarrito()}</h1>
+            <h1>Total: {totalCarrito()}</h1>
+            
 
             <hr/>
 
@@ -23,7 +27,7 @@ const Cart = () => {
             <h2>Email:</h2>
             <input type="text" name="txtEmail" id="txtEmail" defaultValue=""/>
             <h2>Número de Teléfono:</h2>
-            <input type="text" name="txtTelefono" id="txtTelefono" defaultValue=""/>
+            <input type="text" name="txtTelefono" id="txtTelefono" input="holanda" defaultValue=""/>
             <hr/>
             <button>Aceptar</button>
 
