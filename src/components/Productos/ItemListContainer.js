@@ -22,10 +22,11 @@ const ItemListContainer = () => {
         );
     }
 
-    return <div>
+    useEffect(() => {
+        obtenerProductos()
+    }, [catId])
 
-        <button onClick={obtenerProductos}>Llamar Firebase</button>
-        
+    return <div>        
         <div className="producto">
             {productoAMostrar.length ? (
                 productoAMostrar.map(producto => <ItemList producto ={producto} />)

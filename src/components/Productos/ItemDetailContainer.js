@@ -1,18 +1,33 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import { ItemPops } from "./Productos-Figuras";
+import { database } from "../../firebase/firebase";
+import { queryByTestId } from "@testing-library/react";
 
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState({})
 
-    const { id } = useParams()
+    const { catId, id } = useParams()
+
+    const obtenerProducto = () => {     
+   
+        const categoria = database.collection(catId);
+
+        categoria.doc(id)
+            .get()
+            .then((query) => {
+
+                setItem({
+                    id,
+                    ...query.data()
+                })
+            })
+    }
 
     useEffect(() => {
-        const producto = ItemPops.find(prod => prod.id)
-        setItem(producto)
-    })
+        obtenerProducto()
+    }, [id])
 
     return <div>
         <ItemDetail {...item}/>

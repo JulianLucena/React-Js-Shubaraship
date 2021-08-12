@@ -19,3 +19,7 @@
   border: solid 5px red;
   width: 50vh;
 }
+
+.ItemStyleImg{
+  max-width: 200px;
+}

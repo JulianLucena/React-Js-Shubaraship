@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 
-const ItemDetail = ({category, id, img, price, stock, title}) => {
+const ItemDetail = ({category, id, img, precio, stock, nombre}) => {
 
     const [cantidad, setCount] = useState(1);
 
@@ -20,9 +20,9 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
             category,
             id,
             img,
-            price,
+            precio,
             stock,
-            title,
+            nombre,
             cantidad
         })
     }
@@ -37,9 +37,9 @@ const ItemDetail = ({category, id, img, price, stock, title}) => {
     return(
         <div className="detailbox">
             <div>
-                <img src={img} alt={title}/>
-                <h1>{title}</h1>
-                <h2>Precio: ${price}</h2> 
+                <img src={img} alt={nombre}/>
+                <h1>{nombre}</h1>
+                <h2>Precio: ${precio}</h2> 
                 <p>Cantidad disponible: {stock}</p>
                 {!finished ? (     
                     <>               

@@ -17,13 +17,13 @@ function App() {
               <Route exact path="/">              
                   <h1>HOLA SOY EL HOME</h1>
               </Route> 
-              <Route path="/categoria/:catId">
+              <Route exact path="/categoria/:catId">
                 <ItemListContainer />
               </Route>      
-              <Route path="/categoria/:catId/:id">
+              <Route exact path="/categoria/:catId/:id">
                 <ItemDetailContainer />
               </Route>     
-              <Route path="/cart">
+              <Route exact path="/cart">
                 <Cart />
               </Route>
             </Switch>
