@@ -1,3 +1,7 @@
+.card{
+  border:none !important;
+}
+
 .body{
   background-color: grey;
   height: 100vh;
@@ -13,6 +17,7 @@
 
 .StyleImg{
   max-width: 20rem;
+  max-height: 27rem;
 }
 
 .producto{ 
@@ -47,15 +52,20 @@ a{
   width: 20rem;
   text-align: center;
   margin-top: 2rem;
+  box-shadow: 5px 5px 4px rgba(36, 36, 36, 0.8);
 }
 
 .CardTitle{
   font-weight: 600;
   font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: gold;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .CardPrice{
-  
+  font-size: 1.5rem;
 }
 
 .CardAmount{
@@ -63,9 +73,14 @@ a{
 }
 
 .CardMore{
-
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: gold;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
 .CardTotal{
-  
+
 }
