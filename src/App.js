@@ -11,7 +11,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <div>
+        <div className="body">
           <Navbar /> 
             <Switch>
               <Route exact path="/">              

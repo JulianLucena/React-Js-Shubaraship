@@ -1,14 +1,15 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const CartItem = ({ item }) => {
 
     return(
-        <div className="ItemStyleContainer">
-            <img className="ItemStyleImg" src={item.img} alt= {item.title} />
-            <h1>{item.nombre}</h1>
-            <h2>Precio: {item.precio}</h2>      
-            <h2>Cantidad: {item.cantidad}</h2>  
-            <h2>Total: {item.precio * item.cantidad}</h2>
+        <div className="ItemStyleContainer card myCard">
+            <img className="StyleImg" src={item.img} alt= {item.title} />
+            <span className="CardTitle">{item.nombre}</span>
+            <span className="CardPrice">Precio: {item.precio}</span>      
+            <span className="CardAmount">Cantidad: {item.cantidad}</span>  
+            <span className="CardTotal">Total: {item.precio * item.cantidad}</span>
         </div>
     );
 };

@@ -8,12 +8,12 @@ export const ItemList = ( {producto} ) => {
     const {carrito} = useContext(CartContext)
 
     return (       
-        <div className="Card">
+        <div className="card myCard">
             <img className="StyleImg" src={producto.img} alt={producto.nombre} />
-            <h1>{producto.nombre}</h1>            
-            <h3>Precio: ${producto.precio}</h3>
-            <h4>Cantidad: {producto.stock}</h4>
-            <Link to={`/categoria/${producto.categoria}/${producto.id}`}><h4>Ver más...</h4></Link>
+            <span className="CardTitle">{producto.nombre}</span>            
+            <span className="CardPrice">Precio: ${producto.precio}</span>
+            <span className="CardAmount">Cantidad: {producto.stock}</span>
+            <Link to={`/categoria/${producto.categoria}/${producto.id}`}><span className="CardMore">Ver más...</span></Link>
         </div>
     )
 }

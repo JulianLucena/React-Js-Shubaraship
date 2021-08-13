@@ -19,30 +19,30 @@ const Navbar = () => {
             {/* <nav class="navbar navbar-dark bg-dark"> */}
 
             <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
-            <div class="container-fluid">
-                {/* <a class="navbar-brand" href="#">Shubaraship</a> */}
-                <LogoWidget />   
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">                    
-                    <Link to="/categoria/videojuegos">
-                      <a class="nav-link" href="#">Videojuegos</a>
-                    </Link>
-                    <Link to="/categoria/mangas">
-                        <a class="nav-link" href="#">Mangas</a>
-                    </Link>   
-                    <Link to="/categoria/figuras">
-                       <a class="nav-link" href="#">Figuras Coleccionables</a>
-                    </Link>
-                    <Link to="/categoria/tcgs">
-                        <a class="nav-link" href="#">Trading Card Games</a>
-                    </Link>    
-                    <CardWidget />                
+                <div class="container-fluid">
+                    {/* <a class="navbar-brand" href="#">Shubaraship</a> */}
+                    <LogoWidget />   
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav d-flex align-items-center">                    
+                            <Link to="/categoria/videojuegos">
+                                <a class="nav-link link align-middle">Videojuegos</a>
+                            </Link>
+                            <Link to="/categoria/mangas">
+                                <a class="nav-link link">Mangas</a>
+                            </Link>   
+                            <Link to="/categoria/figuras">
+                            <a class="nav-link link">Figuras Coleccionables</a>
+                            </Link>
+                            <Link to="/categoria/tcgs">
+                                <a class="nav-link link">Trading Card Games</a>
+                            </Link>        
+                        </div>
+                    </div>
+                    <CardWidget class="link" style = {{float:"right"}}/>   
                 </div>
-                </div>
-            </div>
             </nav>
         </div>                     
     );

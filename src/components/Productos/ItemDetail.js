@@ -36,7 +36,7 @@ const ItemDetail = ({category, id, img, precio, stock, nombre}) => {
 
     return(
         <div className="detailbox">
-            <div>
+            <div classname="">
                 <img src={img} alt={nombre}/>
                 <h1>{nombre}</h1>
                 <h2>Precio: ${precio}</h2> 
