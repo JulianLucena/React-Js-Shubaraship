@@ -4,7 +4,7 @@
 
 .body{
   background-color: grey;
-  height: 100vh;
+  height: 150vh;
 }
 
 .Logo{
@@ -82,5 +82,10 @@ a{
 }
 
 .CardTotal{
-
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: gold;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }

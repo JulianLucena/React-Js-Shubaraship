@@ -18,7 +18,7 @@ const Cart = () => {
             
             <div>
                 <h1>Cantidad: {cantidadCarrito()}</h1>
-                <h1>Total: {totalCarrito()}</h1>
+                <h1>Total: ${totalCarrito()}</h1>
                 <h2>Nombre:</h2>
                 <input type="text" name="txtNombre" id="txtNombre" defaultValue=""/>
                 <h2>Apellido:</h2>

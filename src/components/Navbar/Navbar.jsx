@@ -1,6 +1,6 @@
 import React from "react";
 import CardWidget from "./CartWidget";
-import LogoWidget from "./Img_Logo";
+import LogoWidget from "./LogoWidget";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 
