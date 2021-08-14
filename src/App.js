@@ -5,6 +5,7 @@ import ItemListContainer from './components/Productos/ItemListContainer';
 import ItemDetailContainer from "./components/Productos/ItemDetailContainer";
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
+import Opiniones from './components/Opiniones/opiniones';
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
               </Route>     
               <Route exact path="/cart">
                 <Cart />
+              </Route>
+              <Route exact path="/opiniones">
+                <Opiniones />
               </Route>
             </Switch>
         </div>

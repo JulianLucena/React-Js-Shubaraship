@@ -9,6 +9,7 @@
 
 .Logo{
   max-width: 300px;
+  padding-right: 1rem;
 }
 
 .CarritoLogo{
@@ -68,10 +69,6 @@ a{
   font-size: 1.5rem;
 }
 
-.CardAmount{
-
-}
-
 .CardMore{
   font-weight: 600;
   font-size: 1.5rem;
@@ -89,3 +86,27 @@ a{
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
+
+section{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.opiniones{
+  border: 5px solid red;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+  max-width: 60vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+

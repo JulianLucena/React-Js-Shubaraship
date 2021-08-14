@@ -39,6 +39,9 @@ const Navbar = () => {
                             <Link to="/categoria/tcgs">
                                 <a class="nav-link link">Trading Card Games</a>
                             </Link>        
+                            <Link to="/opiniones">
+                                <a class="nav-link link">Dejanos tu opinión!</a>
+                            </Link>
                         </div>
                     </div>
                     <CardWidget class="link" style = {{float:"right"}}/>   
