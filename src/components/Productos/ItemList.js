@@ -12,7 +12,7 @@ export const ItemList = ( {producto} ) => {
             <span className="CardTitle">{producto.nombre}</span>     
             <img className="StyleImg" src={producto.img} alt={producto.nombre}/>                   
             <span className="CardPrice">Precio: ${producto.precio}</span>
-            <span className="CardAmount">Cantidad: {producto.stock}</span>
+            <span className="CardAmount">Stock: {producto.stock}</span>
             <Link className="CardMore" to={`/categoria/${producto.categoria}/${producto.id}`}><span>Comprar</span></Link>
         </div>
     )

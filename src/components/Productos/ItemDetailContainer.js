@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import { database } from "../../firebase/firebase";
-import { queryByTestId } from "@testing-library/react";
 
 const ItemDetailContainer = () => {
 

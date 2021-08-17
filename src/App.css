@@ -110,3 +110,105 @@ form{
   padding: 2rem;
 }
 
+.itemDetail{
+  padding: 2rem;
+}
+
+.itemDetailImg{
+  float: left;
+  margin-right: 3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.itemDetailText{
+  padding: 0rem;
+}
+
+.itemDetailNombre{
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: gold;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-bottom: 0rem;
+}
+
+.itemDetailPrecio{
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: white;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
+
+.itemDetailStock{
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
+
+.itemDetailContador{
+  padding: 1rem;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+  margin-left: none;
+  display: flex;
+}
+
+
+.CountBtn{
+  width: 5rem;
+  height: 3rem;
+  background-color: gold;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+.CountCantidad{
+  font-weight: 600;
+  font-size: 1.5rem; 
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 0rem;
+}
+
+.IteamDetailBtn{
+  width: 10rem;
+  height: 3rem;
+  background-color: gold;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: none;
+  margin: 1rem;
+}
+
+.itemDetailInfo{
+  background-color: white;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.VolverBtnContainer{
+  background-color: gold;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.VolverBtn{
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}

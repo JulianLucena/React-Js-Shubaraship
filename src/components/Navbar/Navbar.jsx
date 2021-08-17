@@ -8,19 +8,8 @@ const Navbar = () => {
 
     return (
         <div>
-            {/* <nav className="nav">
-                <LogoWidget />                    
-                <Link to="/categoria/videojuegos" className="NavBtn">Videojuegos</Link>
-                <Link to="/categoria/mangas" className="NavBtn">Mangas</Link>
-                <Link to="/categoria/figuras" className="NavBtn">Figuras Coleccionables</Link>
-                <Link to="/categoria/tcgs" className="NavBtn">Trading Card Games</Link>
-                <CardWidget />                        
-            </nav>  */}
-            {/* <nav class="navbar navbar-dark bg-dark"> */}
-
             <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
                 <div class="container-fluid">
-                    {/* <a class="navbar-brand" href="#">Shubaraship</a> */}
                     <LogoWidget />   
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -40,7 +29,7 @@ const Navbar = () => {
                                 <a class="nav-link link">Trading Card Games</a>
                             </Link>        
                             <Link to="/opiniones">
-                                <a class="nav-link link">Dejanos tu opinión!</a>
+                                <a class="nav-link link">¡Dejanos tu opinión!</a>
                             </Link>
                         </div>
                     </div>
