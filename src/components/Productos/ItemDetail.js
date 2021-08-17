@@ -39,31 +39,31 @@ const ItemDetail = ({category, id, img, precio, stock, nombre, info}) => {
     return(
         <div className="itemDetail">
             <div>
-                <img className="itemDetailImg" src={img} alt={nombre}/>
-                <div className="itemDetailText">
-                    <p className="itemDetailNombre">{nombre}</p>
-                    <p className="itemDetailPrecio">Precio: ${precio}</p> 
-                    <p className="itemDetailStock">Stock: {stock}</p>
-                    <p className="itemDetailInfo">{info}</p>                    
+                <img className="IDImg" src={img} alt={nombre}/>
+                <div>
+                    <p className="IDNombre">{nombre}</p>
+                    <p className="IDPrecio">Precio: ${precio}</p> 
+                    <p className="IDStock">Stock: {stock}</p>
+                    <p className="IDInfo">{info}</p>                    
                 </div>                
                 {!finished ? (     
-                    <div className="itemDetailContador"> 
+                    <div className="IDContador"> 
                         <ItemCount stock={stock} cantidad={cantidad} setCount={setCount} /> 
-                        <button className="IteamDetailBtn" onClick={handleStateAndCart}>Agregar al carrito</button> 
-                        <button className="IteamDetailBtn" onClick={handleEliminar}>Eliminar del carrito</button>
+                        <button className="IDBtn" onClick={handleStateAndCart}>Agregar al carrito</button> 
+                        <button className="IDBtn" onClick={handleEliminar}>Eliminar del carrito</button>
                     </div>
                 ) : (
-                    <div className="itemDetailContador">
+                    <div className="IDContador">
                         <Link to="/cart" onClick={handleState}>
-                            <button className="IteamDetailBtn" onClick={handleState}>Terminar mi compra</button>
+                            <button className="IDBtn" onClick={handleState}>Terminar mi compra</button>
                         </Link>
-                        <button className="IteamDetailBtn" onClick={handleState}>Modificar</button>
+                        <button className="IDBtn" onClick={handleState}>Modificar</button>
                     </div>
                 )}                
             </div>
-            <div className="VolverBtnContainer">
+            <div className="VolverBtn">
                 <Link to="/categoria/:catId">
-                    <a className="VolverBtn"> Volver </a>
+                    <a> Volver </a>
                 </Link>
             </div>            
         </div>

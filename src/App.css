@@ -112,23 +112,19 @@ form{
 
 .itemDetail{
   padding: 2rem;
+  text-align: center;
 }
 
-.itemDetailImg{
+.IDImg{
   float: left;
   margin-right: 3rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
-.itemDetailText{
-  padding: 0rem;
-}
-
-.itemDetailNombre{
+.IDNombre{
   font-weight: 600;
   font-size: 2rem;
-  text-align: center;
   text-transform: uppercase;
   padding: 1rem;
   background-color: gold;
@@ -137,7 +133,7 @@ form{
   margin-bottom: 0rem;
 }
 
-.itemDetailPrecio{
+.IDPrecio{
   font-weight: 600;
   font-size: 2rem;
   background-color: white;
@@ -145,7 +141,7 @@ form{
   padding: 1rem;
 }
 
-.itemDetailStock{
+.IDStock{
   font-weight: 600;
   font-size: 1.5rem;
   background-color: lightgoldenrodyellow;
@@ -153,14 +149,20 @@ form{
   padding: 1rem;
 }
 
-.itemDetailContador{
+.IDInfo{
+  background-color: white;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.IDContador{
   padding: 1rem;
   align-items: center;
   background-color: lightgoldenrodyellow;
   margin-left: none;
   display: flex;
 }
-
 
 .CountBtn{
   width: 5rem;
@@ -172,7 +174,7 @@ form{
   border: none;
 }
 
-.CountCantidad{
+.CountTxt{
   font-weight: 600;
   font-size: 1.5rem; 
   margin-left: 3rem;
@@ -180,7 +182,7 @@ form{
   margin-bottom: 0rem;
 }
 
-.IteamDetailBtn{
+.IDBtn{
   width: 10rem;
   height: 3rem;
   background-color: gold;
@@ -191,24 +193,12 @@ form{
   margin: 1rem;
 }
 
-.itemDetailInfo{
-  background-color: white;
-  margin-bottom: 0rem;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.VolverBtnContainer{
+.VolverBtn{
   background-color: gold;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-}
-
-.VolverBtn{
+  padding: 1rem;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 1rem;
-  background-color: transparent;
-  border: none;
 }

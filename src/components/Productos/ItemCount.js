@@ -15,9 +15,9 @@ const ItemCount = ({stock, cantidad, setCount}) => {
     }
 
     return(
-        <div className="itemDetailContador">            
+        <div className="IDContador">            
             <button className="CountBtn" onClick ={restar}>-</button>
-            <p className="CountCantidad">{cantidad}</p>
+            <p className="CountTxt">{cantidad}</p>
             <button className="CountBtn" onClick ={sumar}>+</button>
         </div>        
     );    
