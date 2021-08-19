@@ -58,8 +58,6 @@ const Opiniones = () => {
 
     return (
         <div>
-            <h1>OPINIONES:</h1>
-
             <Agregar agregarOpinion={agregarOpinion} />
 
             <section>               

@@ -15,12 +15,12 @@ const Agregar = ({agregarOpinion}) => {
     }
 
     return(
-        <form onSubmit={manejarSubmit}>
-            <p>Nombre: </p>
-            <input type="text" name="nombre" placeholder="Tu nombre..."/>
-            <p>Comentario: </p>
-            <textarea placeholder="Tu opinión..." id="opinion" />
-            <button type="submit">OPINAR</button>
+        <form onSubmit={manejarSubmit} className="OpContainer">
+            <p className="OpTextA">Nombre: </p>
+            <input type="text" name="nombre" placeholder="Tu nombre..." className="OpTextArea"/>
+            <p className="OpTextB">Comentario: </p>
+            <textarea placeholder="Tu opinión..." id="opinion" className="OpTextArea"/>
+            <button type="submit" className="OpButton">OPINAR</button>
         </form>
     )
 }

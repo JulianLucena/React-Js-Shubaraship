@@ -6,6 +6,7 @@ import ItemDetailContainer from "./components/Productos/ItemDetailContainer";
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
 import Opiniones from './components/Opiniones/opiniones';
+import Carrusel from './components/Carrusel';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           <Navbar /> 
             <Switch>
               <Route exact path="/">              
-                  <h1>HOLA SOY EL HOME</h1>
+                <Carrusel />
               </Route> 
               <Route exact path="/categoria/:catId">
                 <ItemListContainer />

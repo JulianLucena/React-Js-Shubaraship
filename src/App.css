@@ -3,7 +3,7 @@
 }
 
 .body{
-  background-color: grey;
+  background-color: lightgoldenrodyellow;
   height: 150vh;
 }
 
@@ -47,6 +47,11 @@ a{
 
 .link:hover{
   background-color: goldenrod;
+  border-radius: 1rem;
+}
+
+.link:not(:hover){
+  border-radius: 1rem;
 }
 
 .myCard{
@@ -91,14 +96,6 @@ section{
   display: flex;
   flex-direction: column;
   padding: 1rem;
-}
-
-.opiniones{
-  border: 5px solid red;
-  padding: 1rem;
-  background-color: white;
-  margin: 1rem;
-  max-width: 60vh;
 }
 
 form{
@@ -201,4 +198,111 @@ form{
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.CarruselImg{
+  border-radius: 4rem;
+}
+
+.OpContainer{
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 60vh;
+  margin: 2rem;
+  box-shadow: 5px 5px 4px rgba(36, 36, 36, 0.8);
+  padding:0rem;
+}
+
+.OpTextA{
+  background-color: gold;
+  text-transform: uppercase;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;  
+  padding: 1rem;
+  margin: 0 0 0 0;
+}
+
+.OpTextB{
+  background-color: gold;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;  
+  margin-top: none;
+  padding: 1rem;
+  margin: 0 0 0 0;
+}
+
+.OpButton{
+  background-color: gold;
+  border: none;
+  margin-top: 0rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.OpTextArea{
+  border: none;
+  padding: 1rem;
+}
+
+.OpButton:hover{
+  text-decoration: underline;
+}
+
+
+.Com{
+  border: solid 5px gold;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin: 1rem;
+  max-width: 60vh;
+  text-align: center;
+}
+
+.ComNombre{
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: gold;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.ComCom{
+  margin-bottom: 0;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.ComDate{
+  margin-bottom: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: lightgoldenrodyellow;
+}
+
+.ComLikes{
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.ComBtn{
+  background-color: gold;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem; 
+  border-radius: 1rem;
+  margin: none;
+}
+
+.ComBtn:hover{
+  text-decoration: underline;
 }
