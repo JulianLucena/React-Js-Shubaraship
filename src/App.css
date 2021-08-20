@@ -4,7 +4,11 @@
 
 .body{
   background-color: lightgoldenrodyellow;
-  height: 150vh;
+  height: 100vh;
+}
+
+.NavBarText{
+  font-size: 1.5rem;
 }
 
 .Logo{
@@ -13,7 +17,7 @@
 }
 
 .CarritoLogo{
-  max-width: 50px;
+  max-width: 5rem;
 }
 
 .StyleImg{

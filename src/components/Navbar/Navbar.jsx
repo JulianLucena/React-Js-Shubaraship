@@ -17,19 +17,19 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav d-flex align-items-center">                    
                             <Link to="/categoria/videojuegos">
-                                <a class="nav-link link align-middle">Videojuegos</a>
+                                <a class="nav-link link align-middle NavBarText">Videojuegos</a>
                             </Link>
                             <Link to="/categoria/mangas">
-                                <a class="nav-link link">Mangas</a>
+                                <a class="nav-link link NavBarText">Mangas</a>
                             </Link>   
                             <Link to="/categoria/figuras">
-                            <a class="nav-link link">Figuras Coleccionables</a>
+                            <a class="nav-link link NavBarText">Figuras Coleccionables</a>
                             </Link>
                             <Link to="/categoria/tcgs">
-                                <a class="nav-link link">Trading Card Games</a>
+                                <a class="nav-link link NavBarText">Trading Card Games</a>
                             </Link>        
                             <Link to="/opiniones">
-                                <a class="nav-link link">¡Dejanos tu opinión!</a>
+                                <a class="nav-link link NavBarText">¡Dejanos tu opinión!</a>
                             </Link>
                         </div>
                     </div>
