@@ -48,13 +48,13 @@ const Cart = () => {
         ev.preventDefault()
 
         let nombre = ev.target.nombre.value;
-        let carrito = ev.target.carrito.value;
         let email = ev.target.email.value;
         let telefono = ev.target.telefono.value;
 
         agregarCompra(nombre, carrito, email, telefono)
 
-        ev.target.reset()       
+        ev.target.reset()  
+        ev.carrito.reset()     
     }
 
     return (
@@ -63,20 +63,24 @@ const Cart = () => {
                 {carrito.length ? (
                 carrito.map(producto => <CartItem key={producto.id} item={producto}/>)
                 ) : (
-                <h1>Tu carrito está vacío</h1>
+                <div>                    
+                    <img className="gif" src="https://firebasestorage.googleapis.com/v0/b/shubaraship.appspot.com/o/Banners%2Fshuba-duck.gif?alt=media&token=c1bae293-646c-4889-bc84-6195e517ab4f" alt="Shuba Duck"></img>
+                    <p className="EmptyCard">Tu carrito está vacío</p>
+                </div>                
                 )}                 
-            </div>            
+            </div>    
+
+            <p className="EmptyCard">Cantidad: {cantidadCarrito()}</p>
+            <p className="EmptyCard">Total: ${totalCarrito()}</p>        
             
-            <form onSubmit={manejarCompra}>
-                <h1>Cantidad: {cantidadCarrito()}</h1>
-                <h1>Total: ${totalCarrito()}</h1>
-                <h2>Nombre:</h2>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre..."/>
-                <h2>Email:</h2>
-                <input type="text" name="email" id="email" placeholder="Tu Email..."/>
-                <h2>Número de Teléfono:</h2>
-                <input type="text" name="telefono" id="telefono" placeholder="Número de teléfono..."/>
-                <button type="submit">COMPRAR</button>
+            <form className="OpContainer" onSubmit={manejarCompra}>                
+                <p className="OpTextA">Nombre:</p>
+                <input className="OpTextArea" type="text" name="nombre" id="nombre" placeholder="Nombre..."/>
+                <p className="OpTextB">Email:</p>
+                <input className="OpTextArea" type="text" name="email" id="email" placeholder="Tu Email..."/>
+                <p className="OpTextB">Número de Teléfono:</p>
+                <input className="OpTextArea" type="text" name="telefono" id="telefono" placeholder="Número de teléfono..."/>
+                <button className="OpButton" type="submit">COMPRAR</button>
             </form>           
         </div>
     )

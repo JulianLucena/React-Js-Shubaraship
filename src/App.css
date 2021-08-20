@@ -201,7 +201,7 @@ form{
 }
 
 .CarruselImg{
-  border-radius: 4rem;
+  border-radius: 2rem;
 }
 
 .OpContainer{
@@ -305,4 +305,17 @@ form{
 
 .ComBtn:hover{
   text-decoration: underline;
+}
+
+.gif{
+  margin: 2rem;
+  border: solid 5px goldenrod;
+  border-radius: 2rem;
+}
+
+.EmptyCard{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0rem;
 }

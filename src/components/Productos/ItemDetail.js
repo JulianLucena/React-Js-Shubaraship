@@ -4,7 +4,7 @@ import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 
-const ItemDetail = ({category, id, img, precio, stock, nombre, info}) => {
+const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
 
     const { catId } = useParams()
 
@@ -19,7 +19,7 @@ const ItemDetail = ({category, id, img, precio, stock, nombre, info}) => {
     const handleStateAndCart = () => {
         setFinished(!finished)
         agregarAlCarrito({
-            category,
+            categoria,
             id,
             img,
             precio,
