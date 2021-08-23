@@ -20,6 +20,7 @@ const Agregar = ({agregarOpinion}) => {
             <input type="text" name="nombre" placeholder="Tu nombre..." className="OpTextArea"/>
             <p className="OpTextB">Comentario: </p>
             <textarea placeholder="Tu opinión..." id="opinion" className="OpTextArea"/>
+            <br/>
             <button type="submit" className="OpButton">OPINAR</button>
         </form>
     )

@@ -58,7 +58,7 @@ const Cart = () => {
     }
 
     return (
-        <div> 
+        <div className="fondo"> 
             <div className="producto">
                 {carrito.length ? (
                 carrito.map(producto => <CartItem key={producto.id} item={producto}/>)
@@ -80,6 +80,7 @@ const Cart = () => {
                 <input className="OpTextArea" type="text" name="email" id="email" placeholder="Tu Email..."/>
                 <p className="OpTextB">Número de Teléfono:</p>
                 <input className="OpTextArea" type="text" name="telefono" id="telefono" placeholder="Número de teléfono..."/>
+                <br/>
                 <button className="OpButton" type="submit">COMPRAR</button>
             </form>           
         </div>

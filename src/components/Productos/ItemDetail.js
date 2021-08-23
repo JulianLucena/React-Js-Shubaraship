@@ -36,8 +36,8 @@ const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
 
     return(
         <div className="itemDetail">
-            <div>
-                <img className="IDImg" src={img} alt={nombre}/>
+            <img className="IDImg" src={img} alt={nombre}/>
+            <div>                
                 <div>
                     <p className="IDNombre">{nombre}</p>
                     <p className="IDPrecio">Precio: ${precio}</p> 
@@ -57,13 +57,13 @@ const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
                         </Link>
                         <button className="IDBtn" onClick={handleState}>Modificar</button>
                     </div>
-                )}                
+                )}         
+                <div className="VolverBtn">
+                    <Link to= {`/categoria/${categoria}`}>
+                        <a> Volver a {categoria}</a>
+                    </Link>
+                </div>           
             </div>
-            <div className="VolverBtn">
-                <Link to= {`/categoria/${categoria}`}>
-                    <a> Volver a {categoria}</a>
-                </Link>
-            </div>            
         </div>
     );
 };

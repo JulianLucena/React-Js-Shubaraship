@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function App() {
 return (
-	<div style={{ display: 'block', width: 1000, padding: 0, margin: 50}}>
+	<div className="Carrusel">
 		<Carousel 
 			controls={false}
 			fade={true}

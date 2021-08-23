@@ -32,6 +32,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: lightgoldenrodyellow;
+}
+
+.fondo{
+  background-color: lightgoldenrodyellow;
 }
 
 .ItemStyleContainer{
@@ -114,8 +119,9 @@ form{
 }
 
 .itemDetail{
-  padding: 2rem;
   text-align: center;
+  height: 562px !important;
+  margin: 2rem;
 }
 
 .IDImg{
@@ -123,6 +129,7 @@ form{
   margin-right: 3rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  height: 500px;
 }
 
 .IDNombre{
@@ -161,7 +168,6 @@ form{
 
 .IDContador{
   padding: 1rem;
-  align-items: center;
   background-color: lightgoldenrodyellow;
   margin-left: none;
   display: flex;
@@ -206,16 +212,25 @@ form{
   text-transform: uppercase;
 }
 
+.Carrusel{
+  display: 'block'; 
+  max-width: 80rem; 
+  padding: 0rem; 
+  margin: 2rem auto;
+
+}
+
 .CarruselImg{
   border-radius: 2rem;
 }
 
 .OpContainer{
+  display: block;
   background-color: white;
   border-radius: 0.5rem;
   text-align: center;
   width: 60vh;
-  margin: 2rem;
+  margin: 2rem auto;
   box-shadow: 5px 5px 4px rgba(36, 36, 36, 0.8);
   padding:0rem;
 }
@@ -244,17 +259,17 @@ form{
 .OpButton{
   background-color: gold;
   border: none;
-  margin-top: 0rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  font-weight: 600;
   font-size: 1.5rem;
-  padding: 0.5rem;
+  font-weight: 600;
+  padding: 1rem; 
+  border-radius: 1rem;
+  margin: 1rem;  
 }
 
 .OpTextArea{
   border: none;
   padding: 1rem;
+  width: 100%;
 }
 
 .OpButton:hover{
@@ -263,10 +278,11 @@ form{
 
 
 .Com{
+  display: block;
   border: solid 5px gold;
   border-radius: 0.5rem;
   background-color: white;
-  margin: 1rem;
+  margin: 1rem auto;
   max-width: 60vh;
   text-align: center;
 }
@@ -306,7 +322,7 @@ form{
   font-weight: 600;
   padding: 1rem; 
   border-radius: 1rem;
-  margin: none;
+  margin: 1rem;
 }
 
 .ComBtn:hover{
