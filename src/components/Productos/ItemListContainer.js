@@ -29,7 +29,7 @@ const ItemListContainer = () => {
     return <div>        
         <div className="producto">
             {productoAMostrar.length ? (
-                productoAMostrar.map(producto => <ItemList producto ={producto} />)
+                productoAMostrar.map(producto => <ItemList producto = {producto}  />)
             ) : (
                 <div>
                    <p className="EmptyCard">Cargando...</p>

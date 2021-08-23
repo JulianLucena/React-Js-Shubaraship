@@ -1,12 +1,10 @@
 import React, { useContext, useState } from "react";
-import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 
 const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
 
-    const { catId } = useParams()
 
     const [cantidad, setCount] = useState(1);
 
@@ -62,8 +60,8 @@ const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
                 )}                
             </div>
             <div className="VolverBtn">
-                <Link to="/categoria/:catId">
-                    <a> Volver </a>
+                <Link to= {`/categoria/${categoria}`}>
+                    <a> Volver a {categoria}</a>
                 </Link>
             </div>            
         </div>
