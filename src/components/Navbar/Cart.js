@@ -54,7 +54,10 @@ const Cart = () => {
         agregarCompra(nombre, carrito, email, telefono)
 
         ev.target.reset()  
-        ev.carrito.reset()     
+
+        for (let i = carrito.length; i > 0; i--){
+            carrito.pop();
+        }
     }
 
     return (

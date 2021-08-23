@@ -57,7 +57,7 @@ const Opiniones = () => {
     }
 
     return (
-        <div>
+        <div className="Fondo">
             <Agregar agregarOpinion={agregarOpinion} />
 
             <section>               
