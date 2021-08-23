@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
                 })
             })
     }
-
+    
     useEffect(() => {
         obtenerProducto()
     }, [id])

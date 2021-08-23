@@ -1,11 +1,8 @@
-import React, { useContext } from "react"
-import { CartContext } from "../CartContext/CartContext"
+import React from "react"
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 export const ItemList = ( {producto} ) => {
-
-    const {carrito} = useContext(CartContext)
 
     return (       
         <div className="card myCard">
