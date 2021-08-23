@@ -1,5 +1,4 @@
 import React from "react";
-import Img_Logo from "./Img-Logo-Ship.png"
 import Shubalogo from "./Shubaraship-Logo.png"
 import { Link } from "react-router-dom";
 

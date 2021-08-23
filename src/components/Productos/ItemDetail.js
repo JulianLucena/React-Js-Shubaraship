@@ -5,7 +5,6 @@ import { CartContext } from "../CartContext/CartContext";
 
 const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
 
-
     const [cantidad, setCount] = useState(1);
 
     const [finished, setFinished] = useState(false);
@@ -28,7 +27,7 @@ const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
         })
     }
 
-    const {agregarAlCarrito, carrito, eliminarProducto} = useContext(CartContext)
+    const {agregarAlCarrito, eliminarProducto} = useContext(CartContext)
 
     const handleEliminar = () => {
         eliminarProducto(id)
