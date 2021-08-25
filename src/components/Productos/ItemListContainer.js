@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router";
 import { database } from "../../firebase/firebase";
@@ -9,7 +9,7 @@ const ItemListContainer = () => {
 
     const { catId } = useParams()
 
-    const obtenerProductos = () => {     
+    const obtenerProductos = useCallback( () => {     
    
         const categoria = database.collection(catId);
 
@@ -20,11 +20,11 @@ const ItemListContainer = () => {
                 return {...doc.data(), id: doc.id };
             }))
         );
-    }
+    }, [catId])
 
     useEffect(() => {
         obtenerProductos()
-    }, [catId])
+    }, [catId, obtenerProductos])
 
     return <div>        
         <div className="producto">

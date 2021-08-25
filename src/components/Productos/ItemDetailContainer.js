@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import { database } from "../../firebase/firebase";
@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
 
     const { catId, id } = useParams()
 
-    const obtenerProducto = () => {     
+    const obtenerProducto =  useCallback( () => {     
    
         const categoria = database.collection(catId);
 
@@ -22,11 +22,11 @@ const ItemDetailContainer = () => {
                     ...query.data()
                 })
             })
-    }
+    }, [catId, id])
     
     useEffect(() => {
         obtenerProducto()
-    }, [id])
+    }, [id, obtenerProducto])
 
     return <div>
         <ItemDetail {...item}/>

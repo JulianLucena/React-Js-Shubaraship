@@ -24,7 +24,7 @@ const Cart = () => {
 
     useEffect(() => {
         obtenerCompras()
-    }, [])
+    }, [compras])
 
     const agregarCompra = (nombre, carrito, email, telefono) => {
 
