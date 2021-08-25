@@ -204,6 +204,13 @@ form{
   margin: 1rem;
 }
 
+.IDVolver{
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .VolverBtn{
   background-color: gold;
   border-bottom-right-radius: 1rem;

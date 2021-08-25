@@ -59,7 +59,7 @@ const ItemDetail = ({categoria, id, img, precio, stock, nombre, info}) => {
                 )}         
                 <div className="VolverBtn">
                     <Link to= {`/categoria/${categoria}`}>
-                        <button> Volver a {categoria}</button>
+                        <button className="IDVolver"> Volver a {categoria}</button>
                     </Link>
                 </div>           
             </div>
