@@ -20,6 +20,6 @@ Shubaraship is an online shop that sells pop culture products. The name is a pun
 
 1. Clonar el repositorio de Git // Clone repository from Git (`git clone https://github.com/JulianLucena/Shubaraship`)
 2. Obtener node_modules // Obtain node_modules (`npm i`)
-3. Escribir // Write `npm start`
+3. Ejecutar // Execute `npm start`
 
 **Ver Online:** `https://shubaraship-shop.netlify.app/`
